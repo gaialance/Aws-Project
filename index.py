@@ -70,7 +70,7 @@ def lambda_handler(event, context):
             return respone
         # getContact
         elif(indexFunction == 2):
-            data = event['queryStringParameters']
+            data = event.get('queryStringParameters',{})
             result = getallsort(data)
             if(len(result) <= 0):
                 respone = {
@@ -96,7 +96,7 @@ def lambda_handler(event, context):
             return respone
         # getContactUSERID
         elif(indexFunction == 3):
-            data = event['queryStringParameters']
+            data = event.get('queryStringParameters',{})
             result = getUser(data)
             # result = getalluser()
             if(len(result) <= 0):

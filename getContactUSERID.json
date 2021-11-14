@@ -17,6 +17,7 @@
         "x-forwarded-proto": "https"
     },
     "queryStringParameters": {
+        "USID": "1",
         "tokenCode": "a075ffc6-27d4-4cd8-a716-8d7aae6bd47e"
     },
     "requestContext": {

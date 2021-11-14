@@ -96,7 +96,7 @@ def UpdateUser(data):
         else:
             return session
     else:
-        return 'Error Data: %s %s %s %s %s %s %s %s' % (
+        return 'Error Data: %s %s %s %s %s %s %s' % (
             ('tokenCode is Missing' if checktokenCode == {} else '')
             ,('userID is Missing' if checkuserID == {} else '')
             ,('Username is Missing' if checkUsername == {} else '')
