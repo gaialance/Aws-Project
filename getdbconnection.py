@@ -8,11 +8,14 @@ db_name = 'dbcontact'
 
 def initializeDB():
     #table name
-    db = pymysql.connect(host=hostname,user=name,password=password,port=3306,cursorclass=pymysql.cursors.DictCursor)
-    db.cursor().execute('use dev')
-    db.cursor().connection.commit()
-
-    return db
+    try:
+        db = pymysql.connect(host=hostname,user=name,password=password,port=3306,cursorclass=pymysql.cursors.DictCursor)
+        db.cursor().execute('use dev')
+        db.cursor().connection.commit()
+        return db
+    except Exception as e:
+        return e
+    
 
     # Get the service resource.
 def verifytoken(token):

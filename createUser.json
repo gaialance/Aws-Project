@@ -35,6 +35,6 @@
         "time": "14/Nov/2021:05:01:54 +0000",
         "timeEpoch": 1636866114883
     },
-    "body": "{\r\n    \"data\":{\r\n        \"tokenCode\":\"bd0e8837-02f6-48d5-aedf-f58e71c54492\",\r\n        \"userID\":\"User 1\",\r\n        \"Username\":\"Test User 1\",\r\n        \"Password\":\"normal123\",\r\n        \"email\":\"huiyilim32@gmail.com\",\r\n        \"phone\":\"0149290547\"\r\n    }\r\n}",
+    "body": "{\r\n    \"data\":{\r\n        \"tokenCode\":\"1714a40b-f01b-4033-b973-6d0649e4b100\",\r\n        \"userID\":\"User 1\",\r\n        \"Username\":\"Test User 1\",\r\n        \"Password\":\"normal123\",\r\n        \"email\":\"huiyilim32@gmail.com\",\r\n        \"phone\":\"0149290547\"\r\n    }\r\n}",
     "isBase64Encoded": false
 }

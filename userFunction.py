@@ -9,15 +9,19 @@ def getIndex():
 
 def CreateUser(data):
     session = verifytoken(data['tokenCode'])
-    if(session != 0):
+    if(session != 'Token Invalid'):
         # got session and token verify do create
-        if(session[0]['siLoginType'] == 1):
+        if(int(session[0]['siLoginType']) == 1):
             index = (getIndex()+1);
             sql = '''
                 INSERT INTO Contact (iUSID,vaUSID,vaUserName,vaemail,vaphone,vaHashPassword1,vaHashPassword2,vaSalt,siLoginType,siAccStatus,silock,iAttempts,dtCreateOn)
                 VALUE (%d,'%s','%s','%s','%s','%s','%s','%s','%d',%d,%d,%d,'%s') 
                 ''' % (index,data['userID'],data['Username'],data['email'],data['phone'],str(uuid.uuid4()),hashingPassword(data['userID'],data['Password']),salt(data['userID'],data['Password']),2,1,0,0,datetime.now().strftime('%Y-%m-%d-%H:%M:%S'))
             data = runSql(sql)
+            if(len(data) == 0):
+                return "Create Successfull"
+            else:
+                return "Error while Creation"+data
         else:
             return 'You have no Permission to Create'
     else:

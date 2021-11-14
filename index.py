@@ -1,14 +1,13 @@
 import json;
-import uuid;
 from userFunction import *
 from getUser import *
 from tokenfunc import *
 from datetime import datetime, timedelta;
 
 # Paths that are avaible in this HTTP RESTFUL API
-rawPaths = ["/getOTP","/validateToken","/createUser","/getContact","/getContactUSERID","/updateUser"]
+rawPaths = ["/getOTP","/createUser","/getContact","/getContactUSERID","/updateUser"]
 # JSON file
-f = open ('updateUser.json', "r")
+f = open ('createUser.json', "r")
  
 # Reading from file
 event = json.loads(f.read())
@@ -46,8 +45,31 @@ def lambda_handler(event, context):
             return respone;
             
         # /CreateUser
-        elif(indexFunction == 2):
+        elif(indexFunction == 1):
             result = CreateUser(json.loads(event['body'])['data']);
+            if(result == 'Create Successfull'):
+                respone = {
+                    "statusCode":200,
+                    "body": json.dumps({
+                        'Message':'Succcess',
+                        'extMesg':result,
+                        'Transaction time':now
+                    })
+                }
+            else:
+                respone = {
+                    "statusCode":200,
+                    "body": json.dumps({
+                        'record':len(result),
+                        'data':result,
+                        'Message':'Failure',
+                        'Transaction time':now
+                    })
+                }
+            return respone
+        elif(indexFunction == 2):
+            data = event['queryStringParameters']
+            result = getalluser(data)
             if(len(result) <= 0):
                 respone = {
                     "statusCode":200,
@@ -69,9 +91,9 @@ def lambda_handler(event, context):
                     })
                 }
             return respone
-        elif(indexFunction == 4):
+        elif(indexFunction == 3):
             data = event['queryStringParameters']
-            result = getUser(data['iUSID'])
+            result = getUser(data)
             # result = getalluser()
             if(len(result) <= 0):
                 respone = {
@@ -94,7 +116,7 @@ def lambda_handler(event, context):
                     })
                 }
             return respone
-        elif(indexFunction == 5):
+        elif(indexFunction == 4):
             result = UpdateUser(json.loads(event['body'])['data']);
             if(result == 'Update Successful'):
                 respone = {

@@ -1,8 +1,8 @@
 {
     "version": "2.0",
-    "routeKey": "GET /getOTP",
+    "routeKey": "POST /getOTP",
     "rawPath": "/getOTP",
-    "rawQueryString": "userID=admin1",
+    "rawQueryString": "iUSID=1",
     "headers": {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
@@ -10,14 +10,15 @@
         "content-length": "89",
         "content-type": "application/json",
         "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
-        "postman-token": "dc236787-ac78-44d8-8018-92b53f1612df",
+        "postman-token": "bdf86700-ae7a-4006-b3e9-7e59a3ce1e79",
         "user-agent": "PostmanRuntime/7.28.4",
-        "x-amzn-trace-id": "Root=1-618f60d5-6a7177e62fcf02b2330c8f93",
+        "x-amzn-trace-id": "Root=1-6190f1e8-2e9e22d86e9284083a002fab",
         "x-forwarded-for": "180.75.233.150",
         "x-forwarded-port": "443",
         "x-forwarded-proto": "https"
     },
     "queryStringParameters": {
+        "iUSID": "1"
     },
     "requestContext": {
         "accountId": "042517620408",
@@ -25,17 +26,17 @@
         "domainName": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
         "domainPrefix": "abiyok5ae1",
         "http": {
-            "method": "GET",
+            "method": "POST",
             "path": "/Uat/getOTP",
             "protocol": "HTTP/1.1",
             "sourceIp": "180.75.233.150",
             "userAgent": "PostmanRuntime/7.28.4"
         },
-        "requestId": "IuwRbgU2SQ0EMOw=",
-        "routeKey": "GET /getOTP",
+        "requestId": "Iyq8Yj4lyQ0EM4w=",
+        "routeKey": "POST /getOTP",
         "stage": "Uat",
-        "time": "13/Nov/2021:06:53:09 +0000",
-        "timeEpoch": 1636786389717
+        "time": "14/Nov/2021:11:24:24 +0000",
+        "timeEpoch": 1636889064600
     },
     "body": "{\r\n    \"creditials\":{\r\n        \"userID\":\"Admin1\",\r\n        \"password\":\"test123\"\r\n    }\r\n}",
     "isBase64Encoded": false

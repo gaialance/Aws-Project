@@ -2,22 +2,23 @@
     "version": "2.0",
     "routeKey": "GET /getContactUSERID",
     "rawPath": "/getContactUSERID",
-    "rawQueryString": "iUSID=2",
+    "rawQueryString": "tokenCode=5afddd2c-3551-4d58-8ce2-c71a5b7a4cf8&USID=0",
     "headers": {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
         "cache-control": "no-cache",
         "content-length": "0",
         "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
-        "postman-token": "ee79b976-c549-4aed-bd2c-a77dbef810be",
+        "postman-token": "6d0c5dc9-118f-4585-a5bf-7d7ca67415c7",
         "user-agent": "PostmanRuntime/7.28.4",
-        "x-amzn-trace-id": "Root=1-618fee05-2a4e364e7518250227418bbf",
+        "x-amzn-trace-id": "Root=1-61910133-5b1f1b53266baa7a7ed85af1",
         "x-forwarded-for": "180.75.233.150",
         "x-forwarded-port": "443",
         "x-forwarded-proto": "https"
     },
     "queryStringParameters": {
-        "iUSID": "0"
+        "USID": "0",
+        "tokenCode": "5afddd2c-3551-4d58-8ce2-c71a5b7a4cf8"
     },
     "requestContext": {
         "accountId": "042517620408",
@@ -31,11 +32,11 @@
             "sourceIp": "180.75.233.150",
             "userAgent": "PostmanRuntime/7.28.4"
         },
-        "requestId": "IwIg7jYhSQ0EJww=",
+        "requestId": "Iy0gBgc5SQ0EMqQ=",
         "routeKey": "GET /getContactUSERID",
         "stage": "Uat",
-        "time": "13/Nov/2021:16:55:33 +0000",
-        "timeEpoch": 1636822533756
+        "time": "14/Nov/2021:12:29:39 +0000",
+        "timeEpoch": 1636892979194
     },
     "isBase64Encoded": false
 }
