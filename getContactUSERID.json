@@ -17,8 +17,7 @@
         "x-forwarded-proto": "https"
     },
     "queryStringParameters": {
-        "USID": "0",
-        "tokenCode": "5afddd2c-3551-4d58-8ce2-c71a5b7a4cf8"
+        "tokenCode": "a075ffc6-27d4-4cd8-a716-8d7aae6bd47e"
     },
     "requestContext": {
         "accountId": "042517620408",

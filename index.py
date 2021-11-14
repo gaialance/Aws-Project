@@ -7,7 +7,7 @@ from datetime import datetime, timedelta;
 # Paths that are avaible in this HTTP RESTFUL API
 rawPaths = ["/getOTP","/createUser","/getContact","/getContactUSERID","/updateUser"]
 # JSON file
-f = open ('getOTP.json', "r")
+f = open ('getContactUSERID.json', "r")
  
 # Reading from file
 event = json.loads(f.read())
