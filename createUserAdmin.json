@@ -1,0 +1,40 @@
+{
+    "version": "2.0",
+    "routeKey": "POST /createUser",
+    "rawPath": "/createUser",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "cache-control": "no-cache",
+        "content-length": "195",
+        "content-type": "application/json",
+        "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "postman-token": "d5bcb60f-56c8-43af-aaaf-1b6d45d145dc",
+        "user-agent": "PostmanRuntime/7.28.4",
+        "x-amzn-trace-id": "Root=1-618ff203-4e5ee8c61bf649364477ddfd",
+        "x-forwarded-for": "180.75.233.150",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "042517620408",
+        "apiId": "abiyok5ae1",
+        "domainName": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "domainPrefix": "abiyok5ae1",
+        "http": {
+            "method": "POST",
+            "path": "/Uat/createUser",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "180.75.233.150",
+            "userAgent": "PostmanRuntime/7.28.4"
+        },
+        "requestId": "IwLAkhwKyQ0EM4w=",
+        "routeKey": "POST /createUser",
+        "stage": "Uat",
+        "time": "13/Nov/2021:17:12:35 +0000",
+        "timeEpoch": 1636823555461
+    },
+    "body": "{\r\n    \"data\":{\r\n        \"userID\":\"Admin1\",\r\n        \"Username\":\"Admin User\",\r\n        \"Password\":\"test123\",\r\n        \"email\":\"nicholashowaiken@gmail.com\",\r\n        \"phone\":\"0149290547\"\r\n    }\r\n}",
+    "isBase64Encoded": false
+}

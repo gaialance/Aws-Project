@@ -1,0 +1,40 @@
+{
+    "version": "2.0",
+    "routeKey": "POST /createUser",
+    "rawPath": "/createUser",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "cache-control": "no-cache",
+        "content-length": "253",
+        "content-type": "application/json",
+        "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "postman-token": "5b2ea287-6633-4356-b844-59ae67464db6",
+        "user-agent": "PostmanRuntime/7.28.4",
+        "x-amzn-trace-id": "Root=1-61909842-70fe42d35df8f1bd107408fa",
+        "x-forwarded-for": "180.75.233.150",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "042517620408",
+        "apiId": "abiyok5ae1",
+        "domainName": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "domainPrefix": "abiyok5ae1",
+        "http": {
+            "method": "POST",
+            "path": "/Uat/createUser",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "180.75.233.150",
+            "userAgent": "PostmanRuntime/7.28.4"
+        },
+        "requestId": "Ixy6eg3kSQ0EPVA=",
+        "routeKey": "POST /createUser",
+        "stage": "Uat",
+        "time": "14/Nov/2021:05:01:54 +0000",
+        "timeEpoch": 1636866114883
+    },
+    "body": "{\r\n    \"data\":{\r\n        \"tokenCode\":\"bd0e8837-02f6-48d5-aedf-f58e71c54492\",\r\n        \"userID\":\"User 1\",\r\n        \"Username\":\"Test User 1\",\r\n        \"Password\":\"normal123\",\r\n        \"email\":\"huiyilim32@gmail.com\",\r\n        \"phone\":\"0149290547\"\r\n    }\r\n}",
+    "isBase64Encoded": false
+}

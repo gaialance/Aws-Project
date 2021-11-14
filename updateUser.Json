@@ -1,0 +1,40 @@
+{
+    "version": "2.0",
+    "routeKey": "POST /updateUser",
+    "rawPath": "/updateUser",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "cache-control": "no-cache",
+        "content-length": "325",
+        "content-type": "application/json",
+        "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "postman-token": "6b78b0c0-4744-4814-a25b-1c35a91d2a9b",
+        "user-agent": "PostmanRuntime/7.28.4",
+        "x-amzn-trace-id": "Root=1-6190dcfc-17d6afed7970591e6d2201f2",
+        "x-forwarded-for": "180.75.233.150",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "042517620408",
+        "apiId": "abiyok5ae1",
+        "domainName": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "domainPrefix": "abiyok5ae1",
+        "http": {
+            "method": "POST",
+            "path": "/Uat/updateUser",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "180.75.233.150",
+            "userAgent": "PostmanRuntime/7.28.4"
+        },
+        "requestId": "Iyd3dir9SQ0EMEQ=",
+        "routeKey": "POST /updateUser",
+        "stage": "Uat",
+        "time": "14/Nov/2021:09:55:08 +0000",
+        "timeEpoch": 1636883708301
+    },
+    "body": "{\r\n    \"data\":{\r\n        \"tokenCode\":\"914c5b96-ab2b-49db-b2b0-259dd4b9cee5\",\r\n        \"iUSID\":1,\r\n        \"userID\":\"User 1\",\r\n        \"Username\":\"Test User 1\",\r\n        \"Password\":\"normal123\",\r\n        \"email\":\"huiyilim32@gmail.com\",\r\n        \"phone\":\"0149290547\",\r\n        \"siLoginType\":1,\r\n        \"siAccStatus\":1\r\n    }\r\n}",
+    "isBase64Encoded": false
+}
