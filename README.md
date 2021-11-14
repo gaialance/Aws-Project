@@ -1,6 +1,18 @@
 # Aws-Project
 This is a web APIs demo to retrieve Contact Info based on specific category This project will be done via RESTFULL API format in JSON with AWS lambda API. Coding Language used will be in python for easier understanding
 
+# Note
+This project is used Python for development purpose there will be a slight different in coding the index.py will be move to lambda and change to lamda_function.py<br />
+`There will be a file different`<br />
+For easier Debugging i use python and run on VS code studio for error logging as well as reading where is the error
+
+
+# Aws-Services Used
+1. Lambda
+2. RDS
+
+
+
 ## Main Details:
 1. vaUserID(User login Display Name)
 2. vaPhone (phone number)
