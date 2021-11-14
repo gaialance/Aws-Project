@@ -7,7 +7,7 @@ from datetime import datetime, timedelta;
 # Paths that are avaible in this HTTP RESTFUL API
 rawPaths = ["/getOTP","/createUser","/getContact","/getContactUSERID","/updateUser"]
 # JSON file
-f = open ('getContact.json', "r")
+f = open ('getOTP.json', "r")
  
 # Reading from file
 event = json.loads(f.read())
@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         if(indexFunction == 0):
             data = json.loads(event['body'])['creditials']
             result = generateToken(data['userID'],data['password'])
-            if(len(result) <= 0):
+            if(len(result) > 0):
                 respone = {
                     "statusCode":200,
                     "body": json.dumps({
@@ -38,7 +38,8 @@ def lambda_handler(event, context):
                     "statusCode":200,
                     "body": json.dumps({
                         'tokenCode':'',
-                        'Message':result,
+                        'Message':'Failure',
+                        'ExtMSG':result,
                         'Transaction time':now
                     })
                 }
@@ -52,7 +53,7 @@ def lambda_handler(event, context):
                     "statusCode":200,
                     "body": json.dumps({
                         'Message':'Succcess',
-                        'extMesg':result,
+                        'ExtMesg':result,
                         'Transaction time':now
                     })
                 }
@@ -67,6 +68,7 @@ def lambda_handler(event, context):
                     })
                 }
             return respone
+        # getContact
         elif(indexFunction == 2):
             data = event['queryStringParameters']
             result = getallsort(data)
@@ -76,7 +78,8 @@ def lambda_handler(event, context):
                     "body": json.dumps({
                         'record':len(result),
                         'data':[],
-                        'Message':'No Record Found',
+                        'Message':'Success',
+                        'ExtMesg':'No Record Found',
                         'Transaction time':now
                     })
                 }
@@ -91,6 +94,7 @@ def lambda_handler(event, context):
                     })
                 }
             return respone
+        # getContactUSERID
         elif(indexFunction == 3):
             data = event['queryStringParameters']
             result = getUser(data)
@@ -99,9 +103,8 @@ def lambda_handler(event, context):
                 respone = {
                     "statusCode":200,
                     "body": json.dumps({
-                        'record':len(result),
-                        'data':[],
-                        'Message':'No Record Found',
+                        'ExtMesg':result,
+                        'Message':'Succcess',
                         'Transaction time':now
                     })
                 }
@@ -131,7 +134,8 @@ def lambda_handler(event, context):
                 respone = {
                     "statusCode":200,
                     "body": json.dumps({
-                        'Message':result,
+                        'Message':'Failure',
+                        'ExtMesg':result,
                         'Transaction time':now
                     })
                 }
