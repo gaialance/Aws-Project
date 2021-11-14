@@ -1,0 +1,41 @@
+{
+    "version": "2.0",
+    "routeKey": "GET /getContact",
+    "rawPath": "/getContact",
+    "rawQueryString": "tokenCode=6dca6fe4-91b4-4948-bd37-1ca779e61371",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "cache-control": "no-cache",
+        "content-length": "0",
+        "host": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "postman-token": "a632827f-9694-463b-b822-8cb564a79531",
+        "user-agent": "PostmanRuntime/7.28.4",
+        "x-amzn-trace-id": "Root=1-61910c2a-67da902f40fd1ec212c744d9",
+        "x-forwarded-for": "180.75.233.150",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "queryStringParameters": {
+        "tokenCode": "6dca6fe4-91b4-4948-bd37-1ca779e61371"
+    },
+    "requestContext": {
+        "accountId": "042517620408",
+        "apiId": "abiyok5ae1",
+        "domainName": "abiyok5ae1.execute-api.ap-southeast-1.amazonaws.com",
+        "domainPrefix": "abiyok5ae1",
+        "http": {
+            "method": "GET",
+            "path": "/Uat/getContact",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "180.75.233.150",
+            "userAgent": "PostmanRuntime/7.28.4"
+        },
+        "requestId": "Iy7Wph1byQ0EPRw=",
+        "routeKey": "GET /getContact",
+        "stage": "Uat",
+        "time": "14/Nov/2021:13:16:26 +0000",
+        "timeEpoch": 1636895786333
+    },
+    "isBase64Encoded": false
+}

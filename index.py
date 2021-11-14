@@ -7,7 +7,7 @@ from datetime import datetime, timedelta;
 # Paths that are avaible in this HTTP RESTFUL API
 rawPaths = ["/getOTP","/createUser","/getContact","/getContactUSERID","/updateUser"]
 # JSON file
-f = open ('createUser.json', "r")
+f = open ('getContact.json', "r")
  
 # Reading from file
 event = json.loads(f.read())
@@ -69,7 +69,7 @@ def lambda_handler(event, context):
             return respone
         elif(indexFunction == 2):
             data = event['queryStringParameters']
-            result = getalluser(data)
+            result = getallsort(data)
             if(len(result) <= 0):
                 respone = {
                     "statusCode":200,
