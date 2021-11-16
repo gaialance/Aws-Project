@@ -1,2 +1,0 @@
-user : demo-user
-Password : Test1234AWS
